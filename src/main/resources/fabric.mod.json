@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "natures_fares",
+	"version": "${version}",
+	"name": "Nature's Fares",
+	"description": "Cross Nature's Spirit and Bountiful Fares!",
+	"authors": [
+		"gayasslily"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/natures_fares/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.natures_fares.NaturesFares"
+		],
+		"client": [
+			"com.natures_fares.NaturesFaresClient"
+		],
+		"fabric-datagen": [
+			"com.natures_fares.NaturesFaresDataGenerator"
+		]
+	},
+	"mixins": [
+		"natures_fares.mixins.json",
+		{
+			"config": "natures_fares.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"natures_spirit": "*",
+		"terrablender": "*",
+		"bountifulfares": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
