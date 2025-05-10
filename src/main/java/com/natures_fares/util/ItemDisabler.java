@@ -1,14 +1,14 @@
 package com.natures_fares.util;
 
-import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+
 public class ItemDisabler {
+
     public static final List<Identifier> WOOD_TYPES = List.of(
             Identifier.of("naturesspirit", "cypress"),
             Identifier.of("naturesspirit", "ghaf"),
@@ -37,12 +37,7 @@ public class ItemDisabler {
         );
     }
 
-    private static final Set<Identifier> ALL_WOOD_VARIANTS = WOOD_TYPES.stream()
+    public static final Set<Identifier> ALL_WOOD_VARIANTS = WOOD_TYPES.stream()
             .flatMap(typeId -> getWoodVariants(typeId).stream())
             .collect(Collectors.toSet());
-
-    public static boolean shouldDisable(Item item) {
-        Identifier id = Registries.ITEM.getId(item);
-        return ALL_WOOD_VARIANTS.contains(id);
-    }
 }

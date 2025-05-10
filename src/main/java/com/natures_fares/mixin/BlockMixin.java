@@ -1,7 +1,6 @@
 package com.natures_fares.mixin;
 
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.resource.featuretoggle.FeatureSet;
@@ -12,14 +11,14 @@ import org.spongepowered.asm.mixin.Unique;
 
 import static com.natures_fares.util.ItemDisabler.ALL_WOOD_VARIANTS;
 
-@Mixin(Item.class)
-public abstract class ItemMixin implements ToggleableFeature {
+@Mixin(Block.class)
+public abstract class BlockMixin implements ToggleableFeature {
 
     @Shadow
-    private final RegistryEntry.Reference<Item> registryEntry = Registries.ITEM.createEntry((Item) (Object) this);
+    private final RegistryEntry.Reference<Block> registryEntry = Registries.BLOCK.createEntry((Block) (Object) this);
 
     @Override
     public boolean isEnabled(FeatureSet enabledFeatures) {
-        return !ALL_WOOD_VARIANTS.contains(registryEntry.registryKey().getValue());
+        return ALL_WOOD_VARIANTS.contains(registryEntry.registryKey().getValue());
     }
 }
