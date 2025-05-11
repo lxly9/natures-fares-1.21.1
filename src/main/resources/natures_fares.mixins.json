@@ -3,7 +3,6 @@
   "package": "com.natures_fares.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "BlockMixin",
     "ItemMixin",
     "NSVillagersMixin",
     "NSWoodSetMixin"

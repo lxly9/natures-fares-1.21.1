@@ -54,6 +54,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	modImplementation "maven.modrinth:natures-spirit:2.2.1-1.21.1"
 	modImplementation "maven.modrinth:bountiful-fares:2.0.4-1.21.1"
+	modImplementation "maven.modrinth:terrablender:4.1.0.8-1.21.1"
 
 }
 

@@ -10,12 +10,12 @@ import java.util.stream.Collectors;
 public class ItemDisabler {
 
     public static final List<Identifier> WOOD_TYPES = List.of(
-            Identifier.of("naturesspirit", "cypress"),
-            Identifier.of("naturesspirit", "ghaf"),
-            Identifier.of("naturesspirit", "larch"),
-            Identifier.of("naturesspirit", "mahogany"),
-            Identifier.of("naturesspirit", "saxaul"),
-            Identifier.of("naturesspirit", "palo_verde")
+            Identifier.of("natures_spirit", "cypress"),
+            Identifier.of("natures_spirit", "ghaf"),
+            Identifier.of("natures_spirit", "larch"),
+            Identifier.of("natures_spirit", "mahogany"),
+            Identifier.of("natures_spirit", "saxaul"),
+            Identifier.of("natures_spirit", "palo_verde")
     );
 
     private static List<Identifier> getWoodVariants(Identifier woodTypeId) {
@@ -33,7 +33,11 @@ public class ItemDisabler {
                 Identifier.of(modid, path + "_button"),
                 Identifier.of(modid, path + "_pressure_plate"),
                 Identifier.of(modid, path + "_sign"),
-                Identifier.of(modid, path + "_hanging_sign")
+                Identifier.of(modid, path + "_hanging_sign"),
+                Identifier.of(modid, path + "_boat"),
+                Identifier.of(modid, path + "_chest_boat"),
+                Identifier.of("bountifulfares", path + "_pickets"),
+                Identifier.of(modid, path + "_trellis")
         );
     }
 
