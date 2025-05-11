@@ -30,74 +30,65 @@ public abstract class NSWoodSetMixin {
 
     @Inject(method = "createLog", at = @At("HEAD"), cancellable = true)
     private void replaceLog(CallbackInfoReturnable<Block> cir) {
-        if (shouldReplace()) return;
+        if (!shouldReplace()) return;
 
-        String logName;
-        if (this.woodPreset == WoodSet.WoodPreset.BAMBOO) {
-            logName = this.name.getPath() + "_block";
-        } else if (this.woodPreset == WoodSet.WoodPreset.NETHER) {
-            logName = this.name.getPath() + "_stem";
-        } else {
-            logName = this.name.getPath() + "_log";
-        }
-
+        String logName = getLogName();
         FruitLogBlock log = new FruitLogBlock(AbstractBlock.Settings.copy(BFBlocks.APPLE_LOG));
         cir.setReturnValue(registerNsBlock(logName, log));
     }
 
     @Inject(method = "createStrippedLog", at = @At("HEAD"), cancellable = true)
     private void replaceStrippedLog(CallbackInfoReturnable<Block> cir) {
-        if (shouldReplace()) return;
+        if (!shouldReplace()) return;
 
-        String logName;
-        if (this.woodPreset == WoodSet.WoodPreset.BAMBOO) {
-            logName = this.name.getPath() + "_block";
-        } else if (this.woodPreset == WoodSet.WoodPreset.NETHER) {
-            logName = this.name.getPath() + "_stem";
-        } else {
-            logName = this.name.getPath() + "_log";
-        }
-
+        String logName = getLogName();
         FruitLogBlock strippedLog = new FruitLogBlock(AbstractBlock.Settings.copy(BFBlocks.APPLE_LOG));
         cir.setReturnValue(registerNsBlock("stripped_" + logName, strippedLog));
     }
 
     @Inject(method = "createWood", at = @At("HEAD"), cancellable = true)
     private void replaceWood(CallbackInfoReturnable<Block> cir) {
-        if (shouldReplace()) return;
+        if (!shouldReplace()) return;
 
-        String woodName;
-        if (this.woodPreset == WoodSet.WoodPreset.BAMBOO) {
-            woodName = this.name.getPath() + "_block";
-        } else if (this.woodPreset == WoodSet.WoodPreset.NETHER) {
-            woodName = this.name.getPath() + "_hyphae";
-        } else {
-            woodName = this.name.getPath() + "_wood";
-        }
-
+        String woodName = getWoodName();
         FruitLogBlock wood = new FruitLogBlock(AbstractBlock.Settings.copy(BFBlocks.APPLE_LOG));
         cir.setReturnValue(registerNsBlock(woodName, wood));
     }
 
     @Inject(method = "createStrippedWood", at = @At("HEAD"), cancellable = true)
     private void replaceStrippedWood(CallbackInfoReturnable<Block> cir) {
-        if (shouldReplace()) return;
+        if (!shouldReplace()) return;
 
-        String woodName;
-        if (this.woodPreset == WoodSet.WoodPreset.NETHER) {
-            woodName = this.name.getPath() + "_hyphae";
-        } else {
-            woodName = this.name.getPath() + "_wood";
-        }
-
+        String woodName = getWoodName();
         StrippedFruitLogBlock strippedWood = new StrippedFruitLogBlock(AbstractBlock.Settings.copy(BFBlocks.APPLE_LOG));
         cir.setReturnValue(registerNsBlock("stripped_" + woodName, strippedWood));
     }
 
     @Unique
     private boolean shouldReplace() {
-        String wood = name.getPath();
-        return !isModLoaded("natures_spirit") && !wood.equals(WOOD_TYPES);
+        return isModLoaded("natures_spirit") && WOOD_TYPES.contains(name);
+    }
+
+    @Unique
+    private String getLogName() {
+        if (this.woodPreset == WoodSet.WoodPreset.BAMBOO) {
+            return name.getPath() + "_block";
+        } else if (this.woodPreset == WoodSet.WoodPreset.NETHER) {
+            return name.getPath() + "_stem";
+        } else {
+            return name.getPath() + "_log";
+        }
+    }
+
+    @Unique
+    private String getWoodName() {
+        if (this.woodPreset == WoodSet.WoodPreset.BAMBOO) {
+            return name.getPath() + "_block";
+        } else if (this.woodPreset == WoodSet.WoodPreset.NETHER) {
+            return name.getPath() + "_hyphae";
+        } else {
+            return name.getPath() + "_wood";
+        }
     }
 
     @Unique

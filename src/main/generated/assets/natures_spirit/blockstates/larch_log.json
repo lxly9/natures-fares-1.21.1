@@ -2,7 +2,7 @@
   "multipart": [
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_otherside",
+        "model": "natures_spirit:block/larch_log_otherside",
         "x": 90
       },
       "when": {
@@ -11,7 +11,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_side",
+        "model": "natures_spirit:block/larch_log_side",
         "x": 90,
         "y": 90
       },
@@ -21,7 +21,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_side",
+        "model": "natures_spirit:block/larch_log_side",
         "x": 270
       },
       "when": {
@@ -30,7 +30,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_otherside",
+        "model": "natures_spirit:block/larch_log_otherside",
         "x": 270,
         "y": 90
       },
@@ -40,7 +40,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_side"
+        "model": "natures_spirit:block/larch_log_side"
       },
       "when": {
         "up": "true"
@@ -48,7 +48,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_otherside",
+        "model": "natures_spirit:block/larch_log_otherside",
         "x": 180
       },
       "when": {
@@ -57,7 +57,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log"
+        "model": "natures_spirit:block/larch_log"
       },
       "when": {
         "axis": "y"
@@ -65,7 +65,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_noside"
+        "model": "natures_spirit:block/larch_log_noside"
       },
       "when": {
         "axis": "y",
@@ -75,7 +75,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_noside",
+        "model": "natures_spirit:block/larch_log_noside",
         "x": 180
       },
       "when": {
@@ -86,7 +86,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_side"
+        "model": "natures_spirit:block/larch_log_side"
       },
       "when": {
         "axis": "y",
@@ -96,7 +96,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_side"
+        "model": "natures_spirit:block/larch_log_side"
       },
       "when": {
         "axis": "y",
@@ -109,7 +109,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_otherside",
+        "model": "natures_spirit:block/larch_log_otherside",
         "x": 180
       },
       "when": {
@@ -120,7 +120,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_otherside",
+        "model": "natures_spirit:block/larch_log_otherside",
         "x": 180
       },
       "when": {
@@ -134,7 +134,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log",
+        "model": "natures_spirit:block/larch_log",
         "x": 90,
         "y": 90
       },
@@ -144,7 +144,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_noside",
+        "model": "natures_spirit:block/larch_log_noside",
         "x": 90,
         "y": 90
       },
@@ -155,7 +155,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_noside",
+        "model": "natures_spirit:block/larch_log_noside",
         "x": 270,
         "y": 90
       },
@@ -166,7 +166,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_side",
+        "model": "natures_spirit:block/larch_log_side",
         "x": 90,
         "y": 90
       },
@@ -178,7 +178,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_side",
+        "model": "natures_spirit:block/larch_log_side",
         "x": 90,
         "y": 90
       },
@@ -190,7 +190,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_side",
+        "model": "natures_spirit:block/larch_log_side",
         "x": 90,
         "y": 90
       },
@@ -205,7 +205,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_side",
+        "model": "natures_spirit:block/larch_log_side",
         "x": 90,
         "y": 90
       },
@@ -220,7 +220,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_otherside",
+        "model": "natures_spirit:block/larch_log_otherside",
         "x": 270,
         "y": 90
       },
@@ -232,7 +232,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_otherside",
+        "model": "natures_spirit:block/larch_log_otherside",
         "x": 270,
         "y": 90
       },
@@ -247,7 +247,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log",
+        "model": "natures_spirit:block/larch_log",
         "x": 270
       },
       "when": {
@@ -256,7 +256,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_noside",
+        "model": "natures_spirit:block/larch_log_noside",
         "x": 270,
         "y": 180
       },
@@ -267,7 +267,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_noside",
+        "model": "natures_spirit:block/larch_log_noside",
         "x": 270
       },
       "when": {
@@ -277,7 +277,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_otherside",
+        "model": "natures_spirit:block/larch_log_otherside",
         "x": 90
       },
       "when": {
@@ -288,7 +288,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_otherside",
+        "model": "natures_spirit:block/larch_log_otherside",
         "x": 90
       },
       "when": {
@@ -302,7 +302,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_side",
+        "model": "natures_spirit:block/larch_log_side",
         "x": 270
       },
       "when": {
@@ -313,7 +313,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_log_side",
+        "model": "natures_spirit:block/larch_log_side",
         "x": 270
       },
       "when": {
@@ -327,7 +327,7 @@
     },
     {
       "apply": {
-        "model": "natures_spirit:block/ghaf_leaves",
+        "model": "natures_spirit:block/larch_leaves",
         "uvlock": true
       },
       "when": {
