@@ -2,7 +2,6 @@ package com.natures_fares.util;
 
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
-import net.minecraft.resource.featuretoggle.FeatureSet;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
@@ -49,16 +48,5 @@ public class ItemDisabler {
 
     public static final Set<Identifier> ALL_WOOD_VARIANTS = WOOD_TYPES.stream()
             .flatMap(typeId -> getWoodVariants(typeId).stream())
-            .collect(Collectors.toSet());
-
-    public static final Set<Item> DISABLED_WOODS = Registries.ITEM.stream()
-            .filter(item -> {
-                Identifier id = Registries.ITEM.getId(item);
-                String path = id.getPath();
-                for (String keyword : WOOD_TYPES_TO_DISABLE) {
-                    if (path.contains(keyword)) return true;
-                }
-                return false;
-            })
             .collect(Collectors.toSet());
 }

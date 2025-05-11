@@ -1,6 +1,5 @@
 package com.natures_fares.mixin;
 
-import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
@@ -11,8 +10,6 @@ import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
-
-import java.util.Objects;
 
 import static com.natures_fares.util.ItemDisabler.*;
 
