@@ -15,6 +15,9 @@ repositories {
 		name = 'TerraformersMC'
 		url = 'https://maven.terraformersmc.com/'
 	}
+	maven {
+		url = 'https://maven.minecraftforge.net/'
+	}
 	exclusiveContent {
 		forRepository {
 			maven {
@@ -50,12 +53,11 @@ dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "com.terraformersmc.terraform-api:terraform-wood-api-v1:11.0.0"
+	modCompileOnly "com.terraformersmc.terraform-api:terraform-wood-api-v1:11.0.0"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	modImplementation "maven.modrinth:natures-spirit:2.2.1-1.21.1"
 	modImplementation "maven.modrinth:bountiful-fares:2.0.4-1.21.1"
-	modImplementation "maven.modrinth:terrablender:4.1.0.8-1.21.1"
-
+	modCompileOnly 'com.github.glitchfiend:TerraBlender-fabric:1.21.1-4.1.0.8'
 }
 
 processResources {
