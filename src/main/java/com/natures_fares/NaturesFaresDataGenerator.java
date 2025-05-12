@@ -1,6 +1,7 @@
 package com.natures_fares;
 
 import com.natures_fares.datagen.BFtoNSModelProvider;
+import com.natures_fares.datagen.DisabledModItemTagProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -11,5 +12,6 @@ public class NaturesFaresDataGenerator implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = generator.createPack();
 
         pack.addProvider(BFtoNSModelProvider::new);
+        pack.addProvider(DisabledModItemTagProvider::new);
     }
 }

@@ -1,7 +1,5 @@
 package com.natures_fares.util;
 
-import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
@@ -16,11 +14,8 @@ public class ItemDisabler {
             Identifier.of("natures_spirit", "ghaf"),
             Identifier.of("natures_spirit", "larch"),
             Identifier.of("natures_spirit", "saxaul"),
-            Identifier.of("natures_spirit", "palo_verde")
-    );
-
-    public static final List<String> WOOD_TYPES_TO_DISABLE = List.of(
-            "mahogany"
+            Identifier.of("natures_spirit", "palo_verde"),
+            Identifier.of("natures_spirit", "joshua")
     );
 
     private static List<Identifier> getWoodVariants(Identifier woodTypeId) {
@@ -41,7 +36,7 @@ public class ItemDisabler {
                 Identifier.of(modid, path + "_hanging_sign"),
                 Identifier.of(modid, path + "_boat"),
                 Identifier.of(modid, path + "_chest_boat"),
-                Identifier.of("bountifulfares", path + "_pickets"),
+                Identifier.of(modid, path + "_pickets"),
                 Identifier.of(modid, path + "_trellis")
         );
     }

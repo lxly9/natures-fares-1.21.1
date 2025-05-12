@@ -42,7 +42,7 @@ public abstract class NSWoodSetMixin {
         if (!shouldReplace()) return;
 
         String logName = getLogName();
-        FruitLogBlock strippedLog = new FruitLogBlock(AbstractBlock.Settings.copy(BFBlocks.APPLE_LOG));
+        FruitLogBlock strippedLog = new FruitLogBlock(AbstractBlock.Settings.copy(BFBlocks.STRIPPED_APPLE_LOG));
         cir.setReturnValue(registerNsBlock("stripped_" + logName, strippedLog));
     }
 
@@ -51,7 +51,7 @@ public abstract class NSWoodSetMixin {
         if (!shouldReplace()) return;
 
         String woodName = getWoodName();
-        FruitLogBlock wood = new FruitLogBlock(AbstractBlock.Settings.copy(BFBlocks.APPLE_LOG));
+        FruitLogBlock wood = new FruitLogBlock(AbstractBlock.Settings.copy(BFBlocks.APPLE_WOOD));
         cir.setReturnValue(registerNsBlock(woodName, wood));
     }
 
@@ -60,7 +60,7 @@ public abstract class NSWoodSetMixin {
         if (!shouldReplace()) return;
 
         String woodName = getWoodName();
-        StrippedFruitLogBlock strippedWood = new StrippedFruitLogBlock(AbstractBlock.Settings.copy(BFBlocks.APPLE_LOG));
+        StrippedFruitLogBlock strippedWood = new StrippedFruitLogBlock(AbstractBlock.Settings.copy(BFBlocks.STRIPPED_APPLE_WOOD));
         cir.setReturnValue(registerNsBlock("stripped_" + woodName, strippedWood));
     }
 

@@ -33,14 +33,12 @@ repositories {
 
 loom {
 	splitEnvironmentSourceSets()
-
 	mods {
 		"natures_fares" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
 	}
-
 }
 
 fabricApi {

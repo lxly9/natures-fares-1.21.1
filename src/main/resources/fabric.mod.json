@@ -38,7 +38,8 @@
 		"java": ">=21",
 		"fabric-api": "*",
 		"natures_spirit": "*",
-		"bountifulfares": "*"
+		"bountifulfares": "*",
+		"item_disabler": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
